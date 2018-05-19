@@ -1,0 +1,382 @@
+/*
+1.Global Css / Css Normalization
+2.Header part
+3.Banner part
+4.About part
+5.Features part
+6.Portfolio part
+7.Contact part
+8.Footer part
+*/
+
+/* 1. Global Css */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+*{
+	margin: 0px;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+.img-center{
+	display: block;
+	margin: 0 auto;
+}
+
+/* 2. Header part */
+header{
+	background-color: #f6f9f9;
+	padding: 20px 0px;
+}
+
+/* 3. Banner part */
+.banner{
+	background: url(../images/bg.png) no-repeat;
+	background-size: cover;
+	padding: 50px 0px;
+}
+.banner h1{
+	text-align: center;
+    font-size: 72px;
+    color: #fff;
+    padding: 150px 0px 10px;
+    letter-spacing: 3px;
+}
+.ban_underline{
+	border: 2px solid #15a4fa;
+	width: 30%;
+	margin: 0 auto 20px;
+	-webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+}
+.ban_underline:hover{
+	width: 50%;
+	cursor: pointer;
+}
+.banner p{
+	color: #fff;
+    text-align: center;
+}
+.ban_btn{
+	padding: 12px 20px;
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    background: transparent;
+    color: #fff;
+    border-radius: 3px;
+    display: block;
+    margin: 50px auto 0px;
+    -webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+}
+.ban_btn:hover{
+	cursor: pointer;
+	background: #15a4fa;
+	box-shadow: 3px 4px 3px #333;
+}
+.fa-angle-down{
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 150px 0px 0px;
+	-webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+}
+.fa-angle-down:hover{
+	cursor: pointer;
+	color: #15a4fa;
+}
+
+/* 4. About part*/
+.about{
+	padding: 50px 0px;
+	background-color: #f6f9f9;
+}
+.about h1{
+	font-size: 36px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: 2d3950; 
+}
+.about p{
+	font-size: 18px;
+	color: #a0a0a0;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+}
+
+/* 5. Features part */
+.features{
+	padding: 50px 0px;
+	width: 100%;
+	float: left;
+}
+.features_one,
+.features_two,
+.features_three{
+	width: 33.33%;
+	float: left;
+}
+.features h1{
+	text-align: center;
+	color: #2d3950;
+	padding: 20px 0px 15px;
+}
+.features p{
+	text-align: center;
+	color: #aeafaf;
+	font-weight: 400;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* 6. Portfolio part */
+.portfolio{
+	padding: 50px 0px;
+	width: 100%;
+	float: left;
+	background-color: #f6f9f9;
+}
+.portfolio h1{
+	font-size: 36px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #2d3950;
+}
+.portfolio p{
+	text-align: center;
+	color: #aeafaf;
+	font-weight: 400;
+}
+.portfolio-box{
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+.gallery-hover{
+	width: 361px;
+	height: 261px;
+	background-color: rgba(22,151,231,0.7);
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	top: 17px;
+	left: 9px;
+}
+.portfolio-gallery{
+	margin-top: 25px;
+}
+.portfolio-box img{
+	margin-top: 18px;
+	-webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.2s all;
+    position: relative;
+    z-index: 1;
+}
+.portfolio-box:hover img{
+	z-index: 0;
+}
+.gallery-hover ul{
+	margin-top: 32%;
+	margin-left: 26%;
+}
+.gallery-hover ul li{
+	color: white;
+	display: inline;
+	list-style: none;
+	padding-right: 15px;
+}
+
+/* 7. Contact part */
+.contact{
+	background: url(../images/bg-2.png) no-repeat;
+	background-size: cover;
+	padding: 50px 0px;
+	width: 100%;
+	float: left;
+}
+.contact h1{
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+}
+.contact p{
+	color: gray;
+	text-align: center;
+	padding: 20  px 0px;
+}
+.contact-form{
+	width: 500px;
+	margin: 50px auto;
+}
+.form-group{
+	margin-bottom: 20px;
+}
+.form-controll{
+	width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: transparent;
+    padding: 15px 0px 15px 10px;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+}    
+textarea{
+	min-height: 120px;
+}
+.contact-btn{
+	padding: 12px 30px;
+	font-size: 18px;
+	border: 1px solid #15a4fa;
+	background-color: transparent;
+	color: gray;
+	display: block;
+	float: right;
+	margin-right: -10px;
+	margin-top: -40px;
+	-webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+    border-radius: 3px;
+}
+.contact-btn:hover{
+	cursor: pointer;
+	background-color: #15a4fa;
+	color: #fff;
+	box-shadow: 3px 4px 3px black;
+}
+input[type=checkbox]{
+	width: 18px;
+	height: 18px;
+	color: #d4cfcf;
+}
+label{
+	display: block;
+    margin: -22px 0px 0px 28px;
+    color: #d4cfcf;
+}
+.checkbox{
+	margin-top: 20px;
+}
+
+/* 8. Footer part */
+footer{
+	width: 100%;
+	border-color: #f6f9f9;
+	padding: 20px 0px;
+	float: left;
+}
+footer p{
+	float: left;
+	color: #d4cfcf;
+	padding: 20px;
+	-webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+}
+footer p:hover{
+	color: black;
+}
+.social-link{
+	float: right;
+}		
+.social-link a{
+	padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 12px 2px;
+    background-color: #15a4fa;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+    -webkit-transition: ease 0.4s all;
+    -moz-transition: ease 0.4s all;
+    -o-transition: ease 0.4s all;
+    transition: ease 0.4s all;
+}
+.social-link a:hover{
+	opacity: 0.5;	
+}
+/******************Css Styling End*************************/
+
+/* media Query for make the website responsive*/
+/* Mobile device 0 to 500px */
+
+@media (min-width: 0px) and (max-width: 500px){
+	.container{
+		width: 100%
+	}
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+	.banner h1{
+		padding: 40px 0px 10px;
+		font-size: 36px;
+	}
+	
+	.fa-angle-down {
+  		padding: 40px 0px 0px;
+	}
+	.about p {
+	    width: 85%;
+	    margin: 0 auto;
+	}
+	.features_one, .features_two, .features_three{
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	.portfolio-box {
+    width: 100%;
+	}
+	.portfolio-box img{
+		width: 100%;
+	}
+	.gallery-hover{
+		width: 100%;
+		left: 0;
+		height: 95.5%;
+	}
+	.contact-form{
+		width: 300px;
+		margin: 40px auto;
+	}
+	.form-controll{
+		width: 96%;
+	}
+	.contact-btn{
+		margin-right: 0px;
+	}
+	footer p{
+		width: 90%;
+    	text-align: center;
+	}
+	footer .social-link{
+		width: 100%;
+		text-align: center;
+	}
+
+/**** For A Tab Devise Screen and 768px ****/
+
+@media only screen and (min-width: 500px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
